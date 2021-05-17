@@ -22,8 +22,12 @@ class Library:
                 books_list.append(book)
         return books_list
 
-    def group_by_year(self):
-        pass
+    def group_by_year(self, year: int):
+        books_list = []
+        for book in self.books:
+            if year == book.year:
+                books_list.append(book)
+        return books_list
 
     def __repr__(self):
         pass
